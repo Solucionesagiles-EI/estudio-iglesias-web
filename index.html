@@ -89,14 +89,14 @@
           <form id="contact-form">
             <div class="form-row">
               <label>Nombre y apellido<input name="nombre" autocomplete="name" required placeholder="Tu nombre"></label>
-              <label>Correo electrónico<input name="email" type="email" autocomplete="email" required placeholder="nombre@correo.com"></label>
+              <label>Correo electrónico <span class="optional">(o completá el teléfono)</span><input name="email" type="email" autocomplete="email" placeholder="nombre@correo.com"></label>
             </div>
             <div class="form-row">
-              <label>Teléfono <span class="optional">(opcional)</span><input name="telefono" type="tel" autocomplete="tel" placeholder="+54 9 ..."></label>
+              <label>Teléfono <span class="optional">(o completá el correo)</span><input name="telefono" type="tel" autocomplete="tel" placeholder="+54 9 ..."></label>
               <label>¿En qué podemos ayudarte?<select name="consulta" required><option value="" disabled selected>Elegí una opción</option><option>Impuestos</option><option>Monotributo o autónomos</option><option>Gestión contable</option><option>Asesoramiento</option><option>Otro tema</option></select></label>
             </div>
             <label>Tu mensaje<textarea name="mensaje" rows="4" required placeholder="Contanos un poco sobre tu consulta..."></textarea></label>
-            <div class="form-submit"><button class="button button-submit" type="submit">Preparar correo <span aria-hidden="true">↗</span></button><p>Se abrirá tu aplicación de correo para que revises y envíes el mensaje.</p></div>
+            <div class="form-submit"><button class="button button-submit" type="submit">Enviar consulta <span aria-hidden="true">↗</span></button><p>Se abrirá tu aplicación de correo para que revises y envíes el mensaje.</p></div>
             <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
           </form>
         </div>
