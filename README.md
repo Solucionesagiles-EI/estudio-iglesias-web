@@ -6,11 +6,11 @@ Landing page estática para un estudio contable e impositivo. Está hecha con HT
 
 - `index.html`: contenido y estructura de la página.
 - `styles.css`: diseño adaptable a escritorio y dispositivos móviles.
-- `script.js`: navegación del formulario de contacto.
+- `script.js`: validación y preparación del correo desde el formulario.
 
 ## Formulario de contacto
 
-El formulario valida nombre, correo, tipo de consulta y mensaje. Al presionar **Preparar correo**, abre la aplicación de correo predeterminada con destinatario `solucionesagiles.ei@gmail.com`, asunto y datos del formulario ya cargados. La persona debe revisar y enviar el correo desde esa aplicación; el sitio no envía mensajes a un servidor.
+El formulario pide nombre, tipo de consulta y mensaje. Para recibir respuesta, la persona puede completar su correo electrónico, su teléfono o ambos. Al presionar **Enviar consulta**, el navegador abre la aplicación de correo predeterminada con destinatario `solucionesagiles.ei@gmail.com`, asunto y datos del formulario ya cargados. La persona debe revisar y enviar el correo desde esa aplicación; el sitio no envía mensajes a un servidor.
 
 ## Publicación
 
