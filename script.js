@@ -41,7 +41,7 @@ if (contactForm) {
       "",
       "Mensaje:",
       message,
-    ].join("\\n");
+    ].join("\n");
 
     const mailto = new URL("mailto:solucionesagiles.ei@gmail.com");
     mailto.searchParams.set("subject", subject);
