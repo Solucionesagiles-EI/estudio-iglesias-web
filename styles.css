@@ -224,3 +224,8 @@ button,input,select,textarea{font:inherit}
   .hero-brand-image{width:min(100%,360px);border-width:4px}
   .service-photo{margin:13px 0 15px}
 }
+
+.form-status:empty{display:none}
+.form-status[data-state="success"]{color:#167451}
+.form-status[data-state="error"]{color:#a44835}
+.form-submit button:disabled{cursor:wait;opacity:.72;transform:none;box-shadow:none}
