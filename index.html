@@ -159,18 +159,18 @@
           <div class="contact-direct"><span class="direct-icon" aria-hidden="true">✉</span><div><small>También podés escribirnos a</small><a href="mailto:solucionesagiles.ei@gmail.com">solucionesagiles.ei@gmail.com</a></div></div>
         </div>
         <div class="form-card">
-          <div class="form-intro"><span class="form-step">UNA CONSULTA · UN PRIMER PASO</span><h3>Escribinos</h3><p>Completá tus datos y prepararemos el correo para que lo revises antes de enviarlo.</p></div>
-          <form id="contact-form">
+          <div class="form-intro"><span class="form-step">UNA CONSULTA · UN PRIMER PASO</span><h3>Escribinos</h3><p>Completá tus datos y recibiremos tu consulta para poder responderte.</p></div>
+          <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="8235675d-7ff3-435f-80d5-1ebd7400cedb">
             <div class="form-row">
               <label>Nombre y apellido<input name="nombre" autocomplete="name" required placeholder="Tu nombre"></label>
-              <label>Correo electrónico<input name="email" type="email" autocomplete="email" placeholder="nombre@correo.com"><small class="field-hint">Completá correo o teléfono.</small></label>
+              <label>Correo electrónico o teléfono<input name="contacto" type="text" autocomplete="on" required placeholder="nombre@correo.com o +54 9 ..."><small class="field-hint">Dejanos un correo o teléfono para responderte.</small></label>
             </div>
             <div class="form-row">
-              <label>Teléfono<input name="telefono" type="tel" autocomplete="tel" placeholder="+54 9 ..."></label>
               <label>Tipo de consulta<select name="consulta" required><option value="" disabled selected>Elegí una opción</option><option>Impuestos</option><option>Monotributo o autónomos</option><option>Gestión contable</option><option>Asesoramiento</option><option>Otro tema</option></select></label>
             </div>
             <label>Mensaje / consulta<textarea name="mensaje" rows="4" required placeholder="Contanos brevemente qué necesitás..."></textarea></label>
-            <div class="form-submit"><button class="button button-primary" type="submit">Enviar consulta <span aria-hidden="true">↗</span></button><p>Se abrirá tu aplicación de correo para confirmar el envío.</p></div>
+            <div class="form-submit"><button class="button button-primary" type="submit"><span class="button-label">Enviar consulta</span><span aria-hidden="true">↗</span></button><p>Tu consulta llegará directamente al estudio.</p></div>
             <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
           </form>
         </div>
